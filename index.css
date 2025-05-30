@@ -1,0 +1,78 @@
+.product.type-product {
+    position: relative;
+    padding-bottom: 40px;
+    overflow: visible;
+}
+
+.overlapping-banner-php {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    width: 90%;
+    max-width: 250px;
+    background-color: rgba(255, 255, 255, 0.9); /* More subtle, slightly transparent white */
+    color: #333;
+    padding: 6px 12px; /* Reduced vertical padding */
+    text-align: center;
+    border-radius: 4px; /* Slightly smaller border-radius for minimalism */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    z-index: 3;
+    padding-bottom: 22px; /* Adjusted to make space for the bar in a smaller banner */
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Subtle border for definition */
+}
+
+.overlapping-banner-php .banner-text {
+    display: block;
+    font-weight: bold;
+    font-size: 0.85em; /* Slightly smaller font */
+    line-height: 1.2;
+    margin-bottom: 3px; /* Reduced space below text */
+}
+
+.overlapping-banner-php .banner-subtext {
+    display: block;
+    font-size: 0.7em; /* Slightly smaller font */
+    opacity: 0.8; /* Slightly less opaque */
+    margin-bottom: 7px; /* Reduced space below subtext */
+}
+
+/* Styles for the progress meter */
+.progress-meter {
+    position: absolute;
+    bottom: 5px; /* Adjusted distance from the bottom of the banner */
+    left: 10%;
+    width: 80%;
+    height: 6px; /* Slightly smaller height for minimalism */
+    background-color: rgba(0, 0, 0, 0.08); /* More subtle track color */
+    border-radius: 3px; /* Adjusted border-radius */
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: var(--sold-out-progress); /* Restored to show sold percentage */
+    background-color: #e74c3c; /* Keeping the red for alert, or could be a softer color */
+    border-radius: 3px; /* Adjusted border-radius */
+    transition: width 0.5s ease-in-out;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .overlapping-banner-php {
+        width: 95%;
+        padding: 5px 8px 20px; /* Further reduced padding for mobile */
+        font-size: 0.8em;
+        transform: translateX(-50%) translateY(-12px); /* Less overlap on small screens */
+    }
+    .progress-meter {
+        bottom: 4px;
+        height: 5px;
+    }
+    .overlapping-banner-php .banner-text {
+        font-size: 0.8em;
+    }
+    .overlapping-banner-php .banner-subtext {
+        font-size: 0.65em;
+    }
+}
