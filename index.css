@@ -61,18 +61,17 @@
 }
 
 .overlapping-banner-php.is-single-product-banner {
-  position: absolute;
-  right: 0;
-  top: 100px;
-  width: auto;
-  max-width: 180px;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #333;
-  padding: 8px 15px;
-  border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  text-align: left;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: none;
+    width: auto;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 .overlapping-banner-php.is-single-product-banner .banner-text {
@@ -86,20 +85,8 @@
   margin-bottom: 10px;
 }
 
-.overlapping-banner-php.is-single-product-banner .progress-meter {
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.overlapping-banner-php.is-single-product-banner .progress-bar {
-  background-color: #2ecc71;
-}
-
 @media (max-width: 768px) {
   .overlapping-banner-php.is-single-product-banner {
-    top: 10px;
-    left: 10px;
     max-width: 150px;
     padding: 6px 10px;
   }
